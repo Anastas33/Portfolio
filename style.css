@@ -76,12 +76,16 @@ h4 {
     margin-bottom: 48px;
 }
 
-.button-center p {
+.button-center p:first-child {
+    display: inline-block;
+}
+
+.button-center p:last-child {
     margin-top: 16px;
 }
 
 .button {
-    width: 105px;
+    /* width: 105px; */
     text-decoration: none;
     border: 1 px solid #374151;
     background-color: #374151;
@@ -382,6 +386,7 @@ h4 {
 
 .work-item-img img:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .work-item-text {
@@ -472,7 +477,7 @@ h4 {
 }
 
 /* Стили для SECTION-LAST */
-.section-last .button-center p {
+.section-last .button-center p:last-child {
     font-size: 20px;
     line-height: 28px;
 }
@@ -542,3 +547,8 @@ footer a:hover {
 footer img {
     vertical-align: middle;
 }
+
+/* .light-theme {
+    color: #111827;
+    background-color: #ffffff;
+} */

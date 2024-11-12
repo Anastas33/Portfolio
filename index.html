@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="auto-mid">
+    <div class="auto-mid" id="auto-mid">
 
         <!-- HEADER -->
         <header class="header">
@@ -21,15 +21,15 @@
             <div class="header-right">
                 <div class="header-nav">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <span class="line">|</span>
                 </div>
                 <div class="header-theme-icon">
-                    <a href="#"><img src="img/moon.svg" alt="theme-icon"></a>
+                    <a href="#" id="themeToggle"><img src="img/moon.svg" alt="theme-icon"></a>
                 </div>
                 <div class="header-theme-button">
                     <a href="#">Download CV</a>
@@ -81,9 +81,9 @@
 
             <!-- SECTION-ABOUT -->
             <section class="section-about">
-                <div class="about">
+                <div class="about" id="about">
                     <div class="button-center">
-                        <a href="#" class="button">About me</a>
+                        <p class="button">About me</p>
                     </div>
                     <div class="about-items">
                         <div class="about-items-photo">
@@ -139,7 +139,7 @@
             <section class="section-skills">
                 <div class="skills">
                     <div class="button-center">
-                        <a href="#" class="button">Skills</a>
+                        <p class="button">Skills</p>
                         <p>The skills, tools and technologies I am really good at:</p>
                     </div>
                     <div class="skills-items">
@@ -189,7 +189,7 @@
             <section class="section-experience">
                 <div class="experience">
                     <div class="button-center">
-                        <a href="#" class="button">Experience</a>
+                        <p class="button">Experience</p>
                         <p>Here is a quick summary of my most recent experiences:</p>
                     </div>
                     <div class="experience-items">
@@ -249,9 +249,9 @@
 
             <!-- SECTION-WORK -->
             <section class="section-work">
-                <div class="work">
+                <div class="work" id="work">
                     <div class="button-center">
-                        <a href="#" class="button">Work</a>
+                        <p class="button">Work</p>
                         <p>Here is a quick summary of my most recent experiences:</p>
                     </div>
                     <div class="work-items">
@@ -289,9 +289,9 @@
                                         class="button">Figma</span><span class="button">Cypress</span><span
                                         class="button">Storybook</span><span class="button">Git</span>
                                 </p>
-                                <p>
+                                <div>
                                     <a href="#"><img src="img/export-icon.svg" alt="export-icon"></a>
-                                </p>
+                                </div>
                             </div>
                             <div class="work-item-img border-radius-right">
                                 <img src="img/picture-work.jpg" alt="picture-work">
@@ -313,21 +313,21 @@
                                         class="button">Figma</span><span class="button">Cypress</span><span
                                         class="button">Storybook</span><span class="button">Git</span>
                                 </p>
-                                <p>
+                                <div>
                                     <a href="#"><img src="img/export-icon.svg" alt="export-icon"></a>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- SECTION-OWORK ENDS -->
+            <!-- SECTION-WORK ENDS -->
 
             <!-- SECTION-TESTIMONIALS -->
             <section class="section-testimonials">
-                <div class="testimonials">
+                <div class="testimonials" id="testimonials">
                     <div class="button-center">
-                        <a href="#" class="button">Testimonials</a>
+                        <p class="button">Testimonials</p>
                         <p>Nice things people have said about me:</p>
                     </div>
                     <div class="testimonials-items">
@@ -360,9 +360,9 @@
 
             <!-- SECTION-LAST -->
             <section class="section-last">
-                <div class="last">
+                <div class="last" id="contact">
                     <div class="button-center">
-                        <a href="#" class="button">Get in touch</a>
+                        <p class="button">Get in touch</p>
                         <p>What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or
                             simply want to connect.</p>
                     </div>
@@ -402,6 +402,8 @@
         <!-- FOOTER ENDS -->
 
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
